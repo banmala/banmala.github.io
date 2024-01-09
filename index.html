@@ -9,7 +9,7 @@
         <title>Tech Jar</title>
     </head>
     <body class="max-w-screen-xl mx-auto">
-        <div class="bg-[#eeeeee] w-full relative" id="main">
+        <div class=" w-full relative" id="main">
           <div id="header_section" class="w-full absolute">
             <nav class="py-[40px]">
                 <div class="flex flex-wrap items-center justify-between px-4 mx-auto">
@@ -85,7 +85,7 @@
               </div>
             </div>
           </section>
-          <section id="services_section" class="bg-gray-100 pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+          <section id="services_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
             <div id="whatWeDo" class="pt-5 mb-[60px]">
               <div>
                 <div class="text-[20px] font-bold text-primary leading-loose mb-2">
@@ -95,8 +95,8 @@
                   We provide the Perfect Solution<br>to your business growth
                 </div>
               </div>
-              <div class="w-full flex flex-wrap justify-around">
-                <div class="bg-white w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
+              <div class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
+                <div class="bg-gray-100 w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
                   <div class="h-full flex flex-row items-center">
                     <div class="w-[300px] mx-auto h-[230px]">
                       <div class="mb-5">
@@ -118,7 +118,7 @@
                     </div>                    
                   </div>
                 </div>
-                <div class="bg-white  w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
+                <div class="bg-gray-100  w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
                   <div class="h-full flex flex-row items-center">
                     <div class="w-[300px] mx-auto h-[230px]">
                       <div class="mb-5">
@@ -140,7 +140,7 @@
                     </div>                    
                   </div>
                 </div>
-                <div class="bg-white  w-[350px]  h-[415px] h-[415px] max-lg:mb-6 rounded-[30px]">
+                <div class="bg-gray-100  w-[350px]  h-[415px] h-[415px] max-lg:mb-6 rounded-[30px]">
                   <div class="h-full flex flex-row items-center">
                     <div class="w-[300px] mx-auto h-[230px]">
                       <div class="mb-5">
@@ -196,7 +196,7 @@
               </div>
             </div>
           </section>
-          <section id="portfolio_section" class="bg-gray-300 pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+          <section id="portfolio_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
             <div>
               <div class="text-[20px] font-bold text-primary leading-loose mb-2">
                 OUR PORTFOLIO
@@ -206,7 +206,7 @@
               </div>
               <div id="portfolio-gallery" class="w-full grid grid-cols-2 max-sm:grid-cols-1 gap-[70px] md:max-lg:gap-[35px]">
                 <div>
-                  <div id="portfolio-card" class="mb-[70px] md:max-lg:mb-[40px]">
+                  <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
                     <img src="./images/portfolio/portfolio-1.png" alt="" class="mb-4">
                     <div>
                       <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
@@ -217,7 +217,7 @@
                       </div>
                     </div>
                   </div>
-                  <div id="portfolio-card" class="mb-[70px] md:max-lg:mb-[40px]">
+                  <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
                     <img src="./images/portfolio/portfolio-2.png" alt="" class="mb-4">
                     <div class="mr-4">
                       <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
@@ -230,7 +230,7 @@
                   </div>
                 </div>
                 <div>
-                  <div id="portfolio-card" class="mb-[70px] md:max-lg:mb-[40px]">
+                  <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
                     <img src="./images/portfolio/portfolio-3.png" alt="" class="mb-4">
                     <div>
                       <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
@@ -241,7 +241,7 @@
                       </div>
                     </div>
                   </div>
-                  <div id="portfolio-card" class="mb-[70px] md:max-lg:mb-[40px]">
+                  <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
                     <img src="./images/portfolio/portfolio-4.png" alt="" class="mb-4">
                     <div class="mr-4">
                       <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
@@ -257,18 +257,154 @@
             </div>
           </section>
 
-          <section id="whyNotHireUs_section" class="bg-gray-300 pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+          <section id="whyNotHireUs_section" class="pt-5 mb-[60px]">
             <div class="flex flex-col items-center w-full">
               <div class="w-full text-center mb-10">
                 <h2 class="text-[56px] max-sm:text-[35px] font-extrabold pb-[50px] text-fblack">There’s a whole world out there.<br>Why not hire <span class="text-primary">Us?</span></h2>
                 <p class="text-[18px] font-normal text-gblack w-[800px] mx-auto">Tap into the most extensive coverage on the market and hire anywhere in five minutes using our 100+ Deel entities and visa support. Yep, your talent pool just got infinite.</p>
               </div>
             </div>
+            <div class="slider overflow-hidden flex">
+                <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
+                  <img src="./images/hireUs/hireUs4.png" alt="" class="relative inset-0 ">
+                  <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">0 Nigeria</div>
+                  <div class="absolute inset-x-0 bottom-10 left-10">
+                    <div class="flex">
+                      <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
+                      </div>
+                      <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
+                  <img src="./images/hireUs/hireUs2.png" alt="" class="relative inset-0 ">
+                  <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">1 Nigeria</div>
+                  <div class="absolute inset-x-0 bottom-10 left-10">
+                    <div class="flex">
+                      <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
+                      </div>
+                      <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
+                  <img src="./images/hireUs/hireUs3.png" alt="" class="relative inset-0 ">
+                  <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">2 Nigeria</div>
+                  <div class="absolute inset-x-0 bottom-10 left-10">
+                    <div class="flex">
+                      <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
+                      </div>
+                      <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
+                  <img src="./images/hireUs/hireUs2.png" alt="" class="relative inset-0 ">
+                  <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">3 Nigeria</div>
+                  <div class="absolute inset-x-0 bottom-10 left-10">
+                    <div class="flex">
+                      <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
+                      </div>
+                      <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
+                  <img src="./images/hireUs/hireUs3.png" alt="" class="relative inset-0 ">
+                  <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">4 Nigeria</div>
+                  <div class="absolute inset-x-0 bottom-10 left-10">
+                    <div class="flex">
+                      <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
+                      </div>
+                      <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
+                        <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+          <section id="ourTeam_section" class=" pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
             <div>
-              <div class="w-[300px] h-auto rounded-[30px] absolute">
-                <img src="./images/hireUs/hireUs2.png" alt="" class="absolute">
-                <div class="relative">askjdhfasdf</div>
-                <div class="relative bottom-0 left-0 p-[15px 15px 15px]">askjdhfasdf</div>
+              <div class="text-[20px] font-bold text-primary leading-loose mb-2">
+                OUR TEAM
+              </div>
+              <div class="font-bold text-[30px] leading-7 mb-8">
+                We provide the Perfect Solution<br>to your business growth
+              </div>
+              <div id="team-gallery" class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
+                <div class="teams_card">
+                  <img src="./images/teams/team1.png" alt="" class="pb-2">
+                  <p class="leading-loose text-primary text-[16px] font-medium">Chief Executive Officer</p>
+                  <p class="leading-loose text-[24px] font-medium">Suraj Kandel</p>
+                </div>
+                <div class="teams_card">
+                  <img src="./images/teams/team2.png" alt="" class="pb-2">
+                  <p class="leading-loose text-primary text-[16px] font-medium">Chief Technical Officer</p>
+                  <p class="leading-loose text-[24px] font-medium">John Doe</p>
+                </div>
+                <div class="teams_card">
+                  <img src="./images/teams/team3.png" alt="" class="pb-2">
+                  <p class="leading-loose text-primary text-[16px] font-medium">Project Manager</p>
+                  <p class="leading-loose text-[24px] font-medium">Jane Kandel</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="lorem" class="pt-5 p-2 mb-[60px] lg:mx-[100px] max-md:mx-5 mx-10  m-auto bg-secondary min-h-[280px] rounded-[16px]">
+            <div class="flex flex-col items-center w-full">
+              <div class="flex flex-row items-center min-h-[280px]">
+                <div class="flex">
+                  <img src="./images/lorem-1.png" alt="" class="size-[150px] mr-5 max-lg:hidden">
+                  <div>
+                    <h2 class="text-primary text-[32px] font-bold pb-2">
+                      Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry
+                    </h2>
+                    <div class="flex">
+                      <p class="text-fblack text-[16px] font-normal mr-4 leading-loose">
+                        Find out how Deel can fit your budget and needs based on the growth<br>stage of your business, the size of your team, or both.
+                      </p>
+                      <a href="#">
+                        <button type="button" class="flex items-center w-[132px] h-[58px] rounded-[50px] bg-primary text-white font-medium">
+                          <div class="text-[16px] font-normal flex flex-col w-full text-center">
+                            Subscribe
+                          </div>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="tetimonials_section" class=" pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+            <div>
+              <div class="text-[20px] font-bold text-primary leading-loose mb-2">
+                TESTIMONIALS
+              </div>
+              <div class="font-bold text-[30px] leading-7 mb-8">
+                See what our customer<br>say about us
+              </div>
+              <div id="testimonial-gallery" class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
+                <div class="testimonial_card">
+                  
+                </div>
               </div>
             </div>
           </section>

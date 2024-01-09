@@ -1,0 +1,25 @@
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 2.5))}
+}
+
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	overflow:hidden;
+	position: relative;
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.why-us-card{
+	position: absolute;
+	transform: translate3d(0, 0, 0);
+	animation: moveSlideshow 2s linear infinite;
+}
+  
+  @keyframes moveSlideshow {
+	100% {transform: translateX(-66.6666%);}
+  }
