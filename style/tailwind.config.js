@@ -9,7 +9,9 @@ tailwind.config = {
           tertiary: '#E1EDFB',
         },
         fontFamily: {
-          'lex':['"Lexend"']
+          'lexend':['Lexend'],
+          'poppins':['Poppins'],
+          'manrope':['Manrope'],
         },
       },
     }
