@@ -23,3 +23,10 @@
   @keyframes moveSlideshow {
 	100% {transform: translateX(-66.6666%);}
   }
+
+
+
+#testimonial_prev,
+#testimonial_next {
+  transform: translateY(-50%);
+}
