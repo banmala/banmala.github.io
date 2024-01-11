@@ -34,3 +34,32 @@
 #testimonial_next {
   transform: translateY(-50%);
 } */
+.bg-1st{
+	background-color:hsla(0,0%,100%,1);
+	background-image:
+	radial-gradient(at 100% 0%, hsla(53,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 100% 44%, hsla(107,53%,58%,1) 0px, transparent 50%),
+	radial-gradient(at 67% 13%, hsla(60,93%,63%,1) 0px, transparent 50%);
+}
+
+.bg-2nd{
+	background-color:hsla(0,0%,100%,1);
+	background-image:
+	radial-gradient(at 0% 69%, hsla(83,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 29%, hsla(193,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 26% 5%, hsla(199,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 100% 0%, hsla(33,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 34% 42%, hsla(34,100%,59%,1) 0px, transparent 50%),
+	radial-gradient(at 57% 53%, hsla(200,69%,70%,1) 0px, transparent 50%),
+	radial-gradient(at 52% 0%, hsla(60,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 100%, hsla(60,0%,100%,1) 0px, transparent 50%);
+}
+
+.bg-3rd{
+	background-color:hsla(0,0%,100%,1);
+	background-image:
+	radial-gradient(at 6% 1%, hsla(43,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 100% 0%, hsla(53,0%,100%,1) 0px, transparent 50%),
+	radial-gradient(at 35% 61%, hsla(200,69%,70%,0.65) 0px, transparent 50%),
+	radial-gradient(at 5% 37%, hsla(45,74%,59%,0.79) 0px, transparent 50%);
+}
