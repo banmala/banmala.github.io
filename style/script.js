@@ -1,36 +1,36 @@
-var multipleCardCarousel = document.querySelector("#testimonial-gallery");
-
-if (window.matchMedia("(min-width: 576px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false
-  });
-  var carouselWidth = $("#testimonial-gallery")[0].scrollWidth;
-  var cardWidth = $(".testimonial_card").width();
-  var scrollPosition = 0;
-  $("#testimonial-next").on("click", function () {
-    console.log("Prev")
-    if (scrollPosition < carouselWidth - cardWidth * 3) {
-      scrollPosition += cardWidth;
-      $("#testimonial-gallery").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
+//For Testimonial Slider with control
+function sliderFunc() {
+  let sliderBox = document.querySelector('.slider');
+  let tapToRightBtn = document.querySelector('#testimonial_next');
+  let tapToLeftBtn = document.querySelector('#testimonial_prev');
+  const childCount = sliderBox.childElementCount;
+  const slideWidth = 530;
+  const element = document.getElementById("testimonial-gallery");
+  const containerWidth = element.getBoundingClientRect().width;
+  const sliderWidth = childCount * slideWidth;
+  let index = 0;
+  sliderBox.style.width = `${sliderWidth}px`;
+  sliderBox.style.left = '0px';
+  function sliderNext() {
+    let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace('px', '')) : 0;
+    let nextLeftPosition = currentLeftPosition;
+      if(sliderWidth>containerWidth && sliderWidth-Math.abs(currentLeftPosition)-containerWidth>slideWidth){
+        nextLeftPosition = currentLeftPosition - slideWidth;
+      }else if(sliderWidth>containerWidth){
+        nextLeftPosition = currentLeftPosition - (sliderWidth-Math.abs(currentLeftPosition)-containerWidth);
+      }
+      sliderBox.style.left = `${nextLeftPosition}px`;
+  }
+  function sliderPrev() {
+    let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace('px', '')) : 0;
+    if(Math.abs(currentLeftPosition)>slideWidth){
+      nextLeftPosition = currentLeftPosition + slideWidth;
+    }else{
+      nextLeftPosition = currentLeftPosition + Math.abs(currentLeftPosition);
     }
-  });
-  $("#testimonial-prev").on("click", function () {
-    console.log("Next")
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      $("#testimonial-gallery").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-} else {
-  $(multipleCardCarousel).addClass("slide");
+    sliderBox.style.left = `${nextLeftPosition}px`;
+  }
+  tapToRightBtn.addEventListener('click', sliderNext);
+  tapToLeftBtn.addEventListener('click', sliderPrev);
 }
-
-$(".country-select-field").each(function(){
-  $(this).children().first().attr("disabled","disabled");
-});
+sliderFunc();
