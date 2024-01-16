@@ -1,629 +1,626 @@
 <!doctype html>
-<html class="scroll-smooth">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script src="./style/tailwind.config.js"></script>
-      <link rel="stylesheet" href="./style/style.css">
-      <title>Tech Jar</title>
-    </head>
-    <body class="max-w-screen-xl mx-auto font-lexend bg-gray-100">
-      <div class=" w-full relative bg-white" id="main">
-        <section id="header_section" class="w-full absolute">
-          <nav class="py-[40px]">
-            <div class="flex flex-wrap items-center justify-between px-4 mx-auto">
-                <a href="#" class="flex items-center">
-                  <img src="./images/TechJAR_logo.png" class="h-6 mr-3 sm:h-9" alt="Tech Jar" />
-                </a>
-                <div class="flex lg:order-2 lg:align-self-right">
-                  <a href="#" class="text-white bg-primary hover:bg-white hover:text-primary font-medium rounded-md text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 hover:bg-primary focus:outline-none">Contact Us</a>
-                  <button data-collapse-toggle="mobile-menu-2"  type="button" class="inline-flex items-center p-2 ml-1 text-sm rounded-md lg:hidden bg-white text-primary hover:text-white hover:bg-primary font-medium" aria-controls="mobile-menu-2" aria-expanded="true">
-                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                  </button>
-                </div>
-                <div class="w-full self-end items-center content-between lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                  <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 sm:w-full max-lg:items-center max-lg:bg-[#09080877] max-lg:rounded-[10px]">
-                    <li>
-                      <a href="#banner_section" class="block py-2 pl-3 pr-4 text-[20px] text-fblack max-lg:text-[#ffffff] hover:text-primary"  data-collapse-toggle="mobile-menu-2">Home</a>
-                    </li>
-                    <li>
-                      <a href="#aboutUs_section" class="block py-2 pl-3 pr-4 text-[20px] text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">About us</a>
-                    </li>
-                    <li>
-                      <a href="#services_section" class="block py-2 pl-3 pr-4 text-[20px] text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Services</a>
-                    </li>
-                    <li>
-                      <a href="#portfolio_section" class="block py-2 pl-3 pr-4 text-[20px] text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Our Portfolio</a>
-                    </li>
-                    <li>
-                      <a href="#ourTeam_section" class="block py-2 pl-3 pr-4 text-[20px] text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Our Team</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-          </nav>
-        </section>
-        <section id="banner_section" class="lg:top-[90px] h-screen flex flex-row items-center line bg-1st">
-          <div class="flex flex-col items-center w-screen justify-center">
-            <div class="text-center max-lg:text-[50px] max-sm:text-[35px] text-[82px] text-[#090808] w-full font-extrabold	">
-              Digital Innovation You Need<br>to Build, Scale and Grow
-            </div>
-            <a href="#aboutUs_section">
-              <button type="button" class="flex items-center w-[315px] h-[102px]  p-2 ml-1 text-sm rounded-[50px] max-lg:h-[51px] max-lg:w-[162px] max-lg:rounded-[25px] bg-primary text-white font-medium">
-                <div class="ml-11 max-lg:ml-5 text-[32px] max-lg:text-[16px] font-normal">
-                  Explore
-                </div>
-                <div class="ml-12 w-[88px] rounded-[44px] max-lg:ml-6 max-lg:w-[44px] max-lg:rounded-[22px]  bg-white flex justify-center items-center flex-col h-[88px] max-lg:h-[44px]">
-                  <img class="size-[36px] max-lg:size-[18px]" src="./images/svg/banner_next.svg">
-                </div>
-              </button>
-            </a>
+<html class="scroll-smooth max-md:text-[60%] md:max-lg:text-[80%]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Tech Jar</title>
+  <script src="./style/toggle-navbar.js"></script>
+  <script src="./style/script.js"></script>
+</head>
+<body class="font-lexend">
+  <div class=" bg-1st">
+    <div class="max-w-screen-xl mx-auto relative" id="main">
+      <section id="header_section" class="w-full absolute">
+        <nav class="py-[40px]">
+          <div class="flex flex-wrap items-center justify-between px-4 mx-auto">
+              <a href="#" class="flex items-center">
+                <img src="./images/TechJAR_logo.png" class="h-6 mr-3 sm:h-9" alt="Tech Jar" />
+              </a>
+              <div class="flex lg:order-2 lg:align-self-right">
+                <a href="#" class="text-white bg-primary font-medium rounded-md text-para-huge px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Contact Us</a>
+                <button data-collapse-toggle="mobile-menu-2"  type="button" class="inline-flex items-center p-2 ml-1 text-para-huge rounded-md lg:hidden bg-white text-primary hover:text-white hover:bg-primary font-medium" aria-controls="mobile-menu-2" aria-expanded="true">
+                  <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+              </div>
+              <div class="w-full self-end items-center content-between lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 sm:w-full max-lg:items-center max-lg:bg-[#09080877] max-lg:rounded-[10px]">
+                  <li>
+                    <a href="#banner_section" class="block py-2 pl-3 pr-4 text-para-huge text-fblack max-lg:text-[#ffffff] hover:text-primary"  data-collapse-toggle="mobile-menu-2">Home</a>
+                  </li>
+                  <li>
+                    <a href="#aboutUs_section" class="block py-2 pl-3 pr-4 text-para-huge text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">About us</a>
+                  </li>
+                  <li>
+                    <a href="#services_section" class="block py-2 pl-3 pr-4 text-para-huge text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Services</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio_section" class="block py-2 pl-3 pr-4 text-para-huge text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Our Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#ourTeam_section" class="block py-2 pl-3 pr-4 text-para-huge text-fblack max-lg:text-[#ffffff] hover:text-primary" data-collapse-toggle="mobile-menu-2">Our Team</a>
+                  </li>
+                </ul>
+              </div>
           </div>
-        </section>
-        <section id="aboutUs_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
-          <div class="flex flex-row flex-wrap">
-            <div class="w-3/6 max-md:w-full md:pr-4 sm:mb-8 a_text flex flex-row items-center">
-              <div class=" max-md:mb-[40px]">
-                <h1 class="text-[56px] max-sm:text-[35px] font-extrabold text-fblack title leading-loose">
-                  Who We Are
-                </h1>
-                <p class="text-[24px] font-light leading-loose text-gblack">We're making global team management so easy, businesses don't need to think twice. Whether you want to hire contractors and employees worldwide without opening legal entities, streamline HR for your global team, or consolidate payroll for everyone —Deel does it all (while keeping you compliant).</p>
-              </div>
-            </div>
-            <div class="w-3/6 max-md:w-full flex flex-col items-center">
-              <div class="w-[100%] m-[auto] sm:m-auto leading-0 relative">
-                <img src="./images/image1.png" alt="" class="w-[100%]">
-                <div class="absolute top-0 w-[100%] h-[100%] bg-white grid grid-cols-3 gap-[10px] mix-blend-lighten">
-                    <div class="bg-black h-[85%] rounded-[10px]"></div>
-                    <div class="bg-black h-[85%] rounded-[10px] mt-[35%]"></div>
-                    <div class="bg-black h-[85%] rounded-[10px]"></div>
-                </div>
-              </div>
-            </div>
+        </nav>
+      </section>
+      <section id="banner_section" class="lg:top-[90px] h-screen flex flex-row items-center line">
+        <div class="flex flex-col items-center w-screen justify-center">
+          <div class="text-center text-title-huge w-full font-extrabold	">
+            Digital Innovation You Need<br>to Build, Scale and Grow
           </div>
-        </section>
-        <section id="services_section" class="bg-2nd pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
-          <div id="whatWeDo" class="pt-5 mb-[60px]">
-            <div>
-              <div class="text-[20px] font-bold text-primary leading-loose mb-2">
-                WHAT WE DO
+          <a href="#aboutUs_section">
+            <button type="button" class="flex items-center w-[315px] h-[102px]  p-2 ml-1 text-para-huge rounded-[50px] max-lg:h-[70px] max-lg:w-[232px] max-md:w-[190px] max-lg:rounded-[35px] text-white font-medium bg-[#008282]">
+              <div class="ml-11 max-lg:ml-6 text-title-normal max-lg:text-para-medium font-normal">
+                Explore
               </div>
-              <div class="font-bold text-[30px] leading-7 mb-8">
-                We provide the Perfect Solution<br>to your business growth
+              <div class="ml-4 w-[88px] rounded-[44px] max-lg:ml-6 max-lg:w-[56px] max-lg:rounded-[28px]  bg-white flex justify-center items-center flex-col h-[88px] max-lg:h-[56px]">
+                <img class="size-[36px] max-lg:size-[24px] max-md:size-[20px]" src="./images/svg/banner_next.svg">
               </div>
-            </div>
-            <div class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
-              <div class="bg-gray-100 w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
-                <div class="h-full flex flex-row items-center">
-                  <div class="w-[300px] mx-auto h-[230px]">
-                    <div class="mb-5">
-                      <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
-                        <img src="./images/svg/whatwedo_web.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
-                      </div>
-                      <div>
-                        <div class="text-[24px] font-bold leading-[30px] mb-2 text-fblack">
-                          Web Development
-                        </div>
-                        <div class="text-[18px] font-light leading-loose text-gblack text-gblack">
-                          We help identify the best ways to improve your business
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-fblack text-[18px]">
-                      Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
-                    </div>
-                  </div>                    
-                </div>
-              </div>
-              <div class="bg-gray-100  w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
-                <div class="h-full flex flex-row items-center">
-                  <div class="w-[300px] mx-auto h-[230px]">
-                    <div class="mb-5">
-                      <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
-                        <img src="./images/svg/whatwedo_app.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
-                      </div>
-                      <div>
-                        <div class="text-[24px] font-bold leading-[30px] mb-2 text-fblack">
-                          App Development
-                        </div>
-                        <div class="text-[18px] font-light leading-loose text-gblack text-gblack">
-                          We help identify the best ways to improve your business
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-fblack text-[18px]">
-                      Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
-                    </div>
-                  </div>                    
-                </div>
-              </div>
-              <div class="bg-gray-100  w-[350px]  h-[415px] h-[415px] max-lg:mb-6 rounded-[30px]">
-                <div class="h-full flex flex-row items-center">
-                  <div class="w-[300px] mx-auto h-[230px]">
-                    <div class="mb-5">
-                      <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
-                        <img src="./images/svg/whatwedo_design.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
-                      </div>
-                      <div>
-                        <div class="text-[24px] font-bold leading-[30px] mb-2 text-fblack">
-                          Design and Branding
-                        </div>
-                        <div class="text-[18px] font-light leading-loose text-gblack text-gblack">
-                          We help identify the best ways to improve your business
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-fblack text-[18px]">
-                      Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
-                    </div>
-                  </div>                    
-                </div>
-              </div>
+            </button>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="max-w-screen-xl mx-auto">
+    <section id="aboutUs_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+      <div class="flex flex-row flex-wrap">
+        <div class="w-3/6 max-md:w-full md:pr-4 sm:mb-8 flex flex-row items-center">
+          <div class=" max-md:mb-[40px] mr-8">
+            <h1 class="text-title-large font-extrabold text-fblack leading-loose">
+              Who We Are
+            </h1>
+            <p class="text-title-small font-light leading-loose text-gblack">We're making global team management so easy, businesses don't need to think twice. Whether you want to hire contractors and employees worldwide without opening legal entities, streamline HR for your global team, or consolidate payroll for everyone —Deel does it all (while keeping you compliant).</p>
+          </div>
+        </div>
+        <div class="w-3/6 max-md:w-full flex flex-col items-center">
+          <div class="w-[100%] m-[auto] sm:m-auto leading-0 relative">
+            <img src="./images/image1.png" alt="" class="w-[100%]">
+            <div class="absolute top-0 w-[100%] h-[100%] bg-white grid grid-cols-3 gap-[10px] mix-blend-lighten">
+                <div class="bg-black h-[85%] rounded-[10px]"></div>
+                <div class="bg-black h-[85%] rounded-[10px] mt-[35%]"></div>
+                <div class="bg-black h-[85%] rounded-[10px]"></div>
             </div>
           </div>
-          <div id="reasonsToChooseUs" class="pt-5">
-            <div class="flex flex-col items-center w-full">
-              <h2 class="text-[56px] max-sm:text-[35px] font-extrabold pb-[50px]">The reasons to choose Us</h2>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="services_section" class="bg-2nd">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+        <section id="whatWeDo" class="pt-5 mb-[60px]">
+          <div>
+            <div class="text-para-huge font-bold text-primary leading-loose mb-2">
+              WHAT WE DO
             </div>
-            <div class="grid max-md:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-[100px]">
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">125min</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] 10px ">First response time with 24/7 in-app support</div>
-              </div>
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">200+</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] ">In-house tax, payroll and legal specialists</div>
-              </div>
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">100+</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] ">Deel-owned entities worldwide to hire and pay anywhere</div>
-              </div>
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">86hrs</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] ">Saved by customers monthly automating HR admin</div>
-              </div>
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">15+</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] ">Flexible payment methods to pay your team</div>
-              </div>
-              <div class="flex flex-col text-center">
-                <div class="text-primary text-[50px] max-sm:text-[32px] font-bold">$210,000+</div>
-                <div class="text-gblack text-[16px] max-sm:text-[16px] ">Of entity set up costs saved per country</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="portfolio_section" class="bg-3rd ">
-          <div class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
-            <div class="text-[20px] font-bold text-primary leading-loose mb-2">
-              OUR PORTFOLIO
-            </div>
-            <div class="font-bold text-[30px] leading-7 mb-8">
+            <div class="font-bold text-title-normal leading-7 mb-8">
               We provide the Perfect Solution<br>to your business growth
             </div>
-            <div id="portfolio-gallery" class="w-full grid grid-cols-2 max-sm:grid-cols-1 gap-[70px] md:max-lg:gap-[35px]">
-              <div>
-                <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
-                  <img src="./images/portfolio/portfolio-1.png" alt="" class="mb-4">
-                  <div>
-                    <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
-                      Digital Marketing Agency Website
+          </div>
+          <div class="w-full grid grid-cols-3 max-lg:place-items-center justify-between max-md:grid-cols-1 md:max-lg:grid-cols-2">
+            <div class="bg-gray-100 w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
+              <div class="h-full flex flex-row items-center">
+                <div class="w-[300px] mx-auto h-[230px]">
+                  <div class="mb-5">
+                    <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
+                      <img src="./images/svg/whatwedo_web.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
                     </div>
-                    <div class="text-[14px] font-normal leading-loose text-gblack text-gblack">
-                      This is a website for a client who want to achieve their goals  and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
-                  <img src="./images/portfolio/portfolio-2.png" alt="" class="mb-4">
-                  <div class="mr-4">
-                    <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
-                      Digital Marketing Agency Website
-                    </div>
-                    <div class="text-[14px] font-normal leading-loose text-gblack text-gblack">
-                      This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                    <div>
+                      <div class="text-title-small font-bold leading-[30px] mb-2 text-fblack">
+                        Web Development
+                      </div>
+                      <div class="text-para-large font-light leading-loose text-gblack">
+                        We help identify the best ways to improve your business
+                      </div>
                     </div>
                   </div>
-                </div>
+                  <div class="text-fblack text-para-large">
+                    Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
+                  </div>
+                </div>                    
               </div>
-              <div>
-                <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
-                  <img src="./images/portfolio/portfolio-3.png" alt="" class="mb-4">
-                  <div>
-                    <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
-                      Digital Marketing Agency Website
+            </div>
+            <div class="bg-gray-100 w-[350px]  h-[415px] max-lg:mb-6 rounded-[30px]">
+              <div class="h-full flex flex-row items-center">
+                <div class="w-[300px] mx-auto h-[230px]">
+                  <div class="mb-5">
+                    <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
+                      <img src="./images/svg/whatwedo_app.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
                     </div>
-                    <div class="text-[14px] font-normal leading-loose text-gblack text-gblack">
-                      This is a website for a client who want to achieve their goals  and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
-                  <img src="./images/portfolio/portfolio-4.png" alt="" class="mb-4">
-                  <div class="mr-4">
-                    <div class="text-[24px] font-semibold leading-[30px] mb-2 text-fblack">
-                      Digital Marketing Agency Website
-                    </div>
-                    <div class="text-[14px] font-normal leading-loose text-gblack text-gblack">
-                      This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                    <div>
+                      <div class="text-title-small font-bold leading-[30px] mb-2 text-fblack">
+                        App Development
+                      </div>
+                      <div class="text-para-large font-light leading-loose text-gblack">
+                        We help identify the best ways to improve your business
+                      </div>
                     </div>
                   </div>
-                </div>
+                  <div class="text-fblack text-para-large">
+                    Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
+                  </div>
+                </div>                    
+              </div>
+            </div>
+            <div class="bg-gray-100 w-[350px] h-[415px] max-lg:mb-6 rounded-[30px]">
+              <div class="h-full flex flex-row items-center">
+                <div class="w-[300px] mx-auto h-[230px]">
+                  <div class="mb-5">
+                    <div class="w-[95px] h-[95px] rounded-[30px] bg-primary text-white flex items-center mb-3">
+                      <img src="./images/svg/whatwedo_design.svg" class="w-[33.33px] h-[33.33px] mx-auto my-auto">
+                    </div>
+                    <div>
+                      <div class="text-title-small font-bold leading-[30px] mb-2 text-fblack">
+                        Design and Branding
+                      </div>
+                      <div class="text-para-large font-light leading-loose text-gblack">
+                        We help identify the best ways to improve your business
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-fblack text-para-large">
+                    Learn More <img src="./images/svg/whatwedo_inlinearrow.svg" class="inline-block ml-4">
+                  </div>
+                </div>                    
               </div>
             </div>
           </div>
         </section>
-        <section id="whyNotHireUs_section" class="pt-5 mb-[60px]">
-          <div class="flex flex-col items-center w-full p-2">
-            <div class="w-full text-center mb-10">
-              <h2 class="text-[56px] max-sm:text-[35px] font-extrabold pb-[50px] text-fblack">There’s a whole world out there.<br>Why not hire <span class="text-primary">Us?</span></h2>
-              <p class="text-[18px] font-normal text-gblack mx-auto">Tap into the most extensive coverage on the market and hire anywhere in five minutes using our 100+ Deel entities and visa support. Yep, your talent pool just got infinite.</p>
-            </div>
+        <section id="reasonsToChooseUs" class="pt-5">
+          <div class="flex flex-col items-center w-full">
+            <h2 class="text-title-large font-extrabold pb-[50px]">The reasons to choose Us</h2>
           </div>
-          <div class="overflow-hidden flex">
-              <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
-                <img src="./images/hireUs/hireUs4.png" alt="" class="relative inset-0 ">
-                <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">0 Nigeria</div>
-                <div class="absolute inset-x-0 bottom-10 left-10">
-                  <div class="flex">
-                    <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
-                    </div>
-                    <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
-                <img src="./images/hireUs/hireUs2.png" alt="" class="relative inset-0 ">
-                <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">1 Nigeria</div>
-                <div class="absolute inset-x-0 bottom-10 left-10">
-                  <div class="flex">
-                    <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
-                    </div>
-                    <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
-                <img src="./images/hireUs/hireUs3.png" alt="" class="relative inset-0 ">
-                <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">2 Nigeria</div>
-                <div class="absolute inset-x-0 bottom-10 left-10">
-                  <div class="flex">
-                    <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
-                    </div>
-                    <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
-                <img src="./images/hireUs/hireUs2.png" alt="" class="relative inset-0 ">
-                <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">3 Nigeria</div>
-                <div class="absolute inset-x-0 bottom-10 left-10">
-                  <div class="flex">
-                    <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
-                    </div>
-                    <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="why-us-card mr-[30px]  even:pt-10 w-[300px] h-auto rounded-[30px relative">
-                <img src="./images/hireUs/hireUs3.png" alt="" class="relative inset-0 ">
-                <div class="absolute left-10 top-10 text-[13px] font-extrabold text-white">4 Nigeria</div>
-                <div class="absolute inset-x-0 bottom-10 left-10">
-                  <div class="flex">
-                    <div class="border-[1px] rounded-[15px] h-[28px] mr-5 w-[50px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">EOR</p>
-                    </div>
-                    <div class="border-[1px] rounded-[15px] h-[28px] w-[75px] flex items-center">
-                      <p class="text-[8px] text-white flex flex-col w-full items-center ">Contractor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </section>
-        <section id="ourTeam_section" class=" pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
-          <div>
-            <div class="text-[20px] font-bold text-primary leading-loose mb-2">
-              OUR TEAM
+          <div class="grid max-md:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-[100px]">
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">125min</div>
+              <div class="text-gblack text-para-medium">First response time with 24/7 in-app support</div>
             </div>
-            <div class="font-bold text-[30px] leading-7 mb-8">
-              We provide the Perfect Solution<br>to your business growth
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">200+</div>
+              <div class="text-gblack text-para-medium">In-house tax, payroll and legal specialists</div>
             </div>
-            <div id="team-gallery" class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
-              <div class="teams_card">
-                <img src="./images/teams/team1.png" alt="" class="pb-2">
-                <p class="leading-loose text-primary text-[16px] font-medium">Chief Executive Officer</p>
-                <p class="leading-loose text-[24px] font-medium">Suraj Kandel</p>
-              </div>
-              <div class="teams_card">
-                <img src="./images/teams/team2.png" alt="" class="pb-2">
-                <p class="leading-loose text-primary text-[16px] font-medium">Chief Technical Officer</p>
-                <p class="leading-loose text-[24px] font-medium">John Doe</p>
-              </div>
-              <div class="teams_card">
-                <img src="./images/teams/team3.png" alt="" class="pb-2">
-                <p class="leading-loose text-primary text-[16px] font-medium">Project Manager</p>
-                <p class="leading-loose text-[24px] font-medium">Jane Kandel</p>
-              </div>
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">100+</div>
+              <div class="text-gblack text-para-medium">Deel-owned entities worldwide to hire and pay anywhere</div>
             </div>
-          </div>
-        </section>
-        <section id="lorem" class="pt-5 p-2 mb-[60px] lg:mx-[100px] max-md:mx-5 mx-10  m-auto bg-secondary min-h-[280px] rounded-[16px]">
-          <div class="flex w-full min-h-[280px] justify-center items-center">
-            <div class="flex">
-              <img src="./images/lorem-1.png" alt="" class="size-[150px] mr-5 max-lg:hidden">
-              <div>
-                <h2 class="text-primary text-[32px] font-bold pb-2">
-                  Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry
-                </h2>
-                <div class="flex">
-                  <p class="text-fblack text-[16px] font-normal mr-4 leading-loose">
-                    Find out how Deel can fit your budget and needs based on the growth<br>stage of your business, the size of your team, or both.
-                  </p>
-                  <a href="#">
-                    <button type="button" class="flex items-center justify-center w-[132px] h-[58px] rounded-[50px] bg-primary text-white font-medium text-[16px] font-normal">
-                      Subscribe
-                    </button>
-                  </a>
-                </div>
-              </div>
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">86hrs</div>
+              <div class="text-gblack text-para-medium">Saved by customers monthly automating HR admin</div>
             </div>
-          </div>
-        </section>
-        <section id="tetimonials_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
-          <div>
-            <div class="grid grid-cols-2 place-content-between">
-              <div>
-                <div class="text-[20px] font-bold text-primary leading-loose mb-2">
-                  TESTIMONIALS
-                </div>
-                <div class="font-bold text-[30px] leading-7 mb-8">
-                  See what our customer<br>say about us
-                </div>
-              </div>
-              <div>
-                <div class="flex flex-col items-center w-full">
-                  <div class="flex">
-                    <button id="testimonial_prev" type="button" class="mr-4 flex items-center w-[58px] h-[58px] rounded-[50px] bg-white border-[1px] border-black font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "prev">
-                      <div class="text-[16px] font-normal flex h-full w-full justify-center items-center">
-                        <img src="./images/svg/testimonial_prev.svg" alt=""  class="w-[14px] h-auto">
-                      </div>
-                    </button>
-                    <button id="testimonial_next" type="button" class="flex items-center w-[58px] h-[58px] rounded-[50px] bg-primary text-white font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "next">
-                      <div class="text-[16px] font-normal flex h-full w-full justify-center items-center">
-                        <img src="./images/svg/testimonial_next.svg" alt="" class="w-[14px] h-auto">
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">15+</div>
+              <div class="text-gblack text-para-medium">Flexible payment methods to pay your team</div>
             </div>
-            <div id="testimonial-gallery" class="w-full overflow-hidden relative" >
-              <div class="slider">
-                <div class="testimonial_card shadow-lg min-w-[500px] mr-[30px] flex items-center rounded-[40px]">
-                  <div class="px-8 py-4">
-                    <p class="text-gblack text-[18px] font-normal">
-                      Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service.Thank You for your service.
-                    </p>
-                    <div class="flex mt-3">
-                      <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
-                        <img src="./images/testimonial/testimonial-1.png" alt="">
-                      </div>
-                      <div>
-                        <h1 class="text-fblack text-[20px] font-semibold">Emily Stones</h1>
-                        <p class="text-gblack text-[18px] font-normal">CEO, Marketing Guru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial_card shadow-lg min-w-[500px] mr-[30px] flex items-center rounded-[40px]">
-                  <div class="px-8 py-4">
-                    <p class="text-gblack text-[18px] font-normal">
-                      Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
-                    </p>
-                    <div class="flex mt-3">
-                      <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
-                        <img src="./images/testimonial/testimonial-1.png" alt="">
-                      </div>
-                      <div>
-                        <h1 class="text-fblack text-[20px] font-semibold">Emily Stones</h1>
-                        <p class="text-gblack text-[18px] font-normal">CEO, Marketing Guru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial_card shadow-lg min-w-[500px] mr-[30px] flex items-center rounded-[40px]">
-                  <div class="px-8 py-4">
-                    <p class="text-gblack text-[18px] font-normal">
-                      Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
-                    </p>
-                    <div class="flex mt-3">
-                      <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
-                        <img src="./images/testimonial/testimonial-1.png" alt="">
-                      </div>
-                      <div>
-                        <h1 class="text-fblack text-[20px] font-semibold">Emily Stones</h1>
-                        <p class="text-gblack text-[18px] font-normal">CEO, Marketing Guru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial_card shadow-lg min-w-[500px] mr-[30px] flex items-center rounded-[40px]">
-                  <div class="px-8 py-4">
-                    <p class="text-gblack text-[18px] font-normal">
-                      Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
-                    </p>
-                    <div class="flex mt-3">
-                      <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
-                        <img src="./images/testimonial/testimonial-1.png" alt="">
-                      </div>
-                      <div>
-                        <h1 class="text-fblack text-[20px] font-semibold">Emily Stones</h1>
-                        <p class="text-gblack text-[18px] font-normal">CEO, Marketing Guru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial_card shadow-lg min-w-[500px] mr-[30px] flex items-center rounded-[40px]">
-                  <div class="px-8 py-4">
-                    <p class="text-gblack text-[18px] font-normal">
-                      Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
-                    </p>
-                    <div class="flex mt-3">
-                      <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
-                        <img src="./images/testimonial/testimonial-1.png" alt="">
-                      </div>
-                      <div>
-                        <h1 class="text-fblack text-[20px] font-semibold">Emily Stones</h1>
-                        <p class="text-gblack text-[18px] font-normal">CEO, Marketing Guru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="getInTouch_section" class="relative grid mb-[60px] max-lg:grid-cols-1 grid-cols-2  mb-4">
-          <div class="flex items-center">
-            <div class="mr-10 ml-2 mb-4">
-              <div class="mb-8">
-                <h2 class="text-[56px] max-sm:text-[35px] font-extrabold pb-5 text-fblack">
-                  Get in <span class="text-primary">Touch</span>
-                </h2>
-                <p class="text-[18px] font-normal text-gblack mx-auto">
-                  Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
-                </p>
-              </div>
-              <form>
-                <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
-                  <input type="text" name="username" id="username" class="pl-4 text-[20px] w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Name">
-                </div>
-                <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
-                  <input type="email" name="email" id="email" class="pl-4 text-[20px] w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Email">
-                </div>
-                <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
-                  <input type="text" name="phone" id="phone" class="pl-4 text-[20px] w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Phone">
-                </div>
-                <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
-                  <select id="find" name="find" class="pl-4 text-[20px] w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6">
-                    <option selected>How did you find us?</option>
-                    <option>From Linkedin</option>
-                    <option>From Facebook</option>
-                    <option>Somewhere Else</option>
-                  </select>
-                </div>
-                <a href="#">
-                  <button type="button" class="flex items-center justify-center w-full h-[58px] bg-primary text-white font-extrabold text-[16px] font-normal">
-                    Submit
-                  </button>
-                </a>
-              </form>
-            </div>
-          </div>
-          <div class="relative h-[800px] w-full">
-            <div class="h-full flex">
-              <div class="w-[40%]"></div>
-              <div class="w-[60%] bg-primary"></div>
-            </div>
-            <div class="absolute w-[500px] bottom-[10%] top-[10%] max-sm:right-[10%] bg-gray-200">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3058.27023032175!2d85.30064459128266!3d27.674632650195097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1704948278754!5m2!1sen!2snp" width="500" height="640" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </section>
-        <section id="footer_Section" class="relative">
-          <div class="bg-black text-white p-10 font-poppins">
-            <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-8">
-              <div>
-                <a href="#" class="flex items-center mb-4">
-                  <img src="./images/TechJAR_logo_dark.png" class="h-6 mr-3 sm:h-9" alt="Tech Jar" />
-                </a>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
-              </div>
-              <div>
-                <h2 class="text-[20px] font-bold leading-[30px] mb-2">
-                  Quick Links
-                </h2>
-                <a href="#header_section">
-                  <p class="font-normal text-[16px] leading-[30px]">Home</p>
-                </a>
-                <a href="#aboutUs_section">
-                  <p class="font-normal text-[16px] leading-[30px]">Who we are</p>
-                </a>
-                <a href="#whatWeDo">
-                  <p class="font-normal text-[16px] leading-[30px]">What we do</p>
-                </a>
-                <a href="#reasonsToChooseUs">
-                  <p class="font-normal text-[16px] leading-[30px]">Reasons to choose us</p>
-                </a>
-                <a href="#portfolio_section">
-                  <p class="font-normal text-[16px] leading-[30px]">Our Portfolio</p>
-                </a>
-                <a href="#tetimonials_section">
-                  <p class="font-normal text-[16px] leading-[30px]">Testimonials</p>
-                </a>
-              </div>
-              <div>
-                <h2 class="text-[20px] font-bold leading-[30px] mb-2">
-                  Contact
-                </h2>
-                <a href="tel:'9988996699'" class="flex">
-                  <img src="./images/footer/mail-coolcare.svg" alt="" class="mr-2">
-                  <p class="font-normal text-[16px] leading-[30px]">
-                    99 88 99 66 99
-                  </p>
-                </a>
-                <a href="mailto:'techjar@gmail.com'" class="flex">
-                  <img src="./images/footer/call.svg" alt="" class="mr-2">
-                  <p class="font-normal text-[16px] leading-[30px]">
-                    techjar@gmail.com
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="bg-fblack text-white px-10 pt-5 pb-1 grid grid-cols-2 max-sm:grid-cols-1 place-content-between">
-            <p class="t-[14px] font-normal font-manrope mb-2">
-              © techjar.com 2024
-            </p>
-            <div class="md:place-self-end mb-2">
-              <div class="flex">
-                <a href="#" class="mr-8">
-                  <img src="./images/footer/linkedin 1.svg" alt="" class="size-[20px]">
-                </a>
-                <a href="#" class="mr-8">
-                  <img src="./images/footer/Facebook 1.svg" alt="" class="size-[20px]">
-                </a>
-                <a href="#" class="mr-8">
-                  <img src="./images/footer/Youtube 1.svg" alt="" class="size-[20px]">
-                </a>
-                <a href="#" class="mr-8">
-                  <img src="./images/footer/Instagram 1.svg" alt="" class="size-[20px]">
-                </a>
-                <a href="#" class="mr-8">
-                  <img src="./images/footer/Twitter 1.svg" alt="" class="size-[20px]">
-                </a>
-              </div>
+            <div class="flex flex-col text-center">
+              <div class="text-primary text-title-medium max-sm:text-title-normal font-bold">$210,000+</div>
+              <div class="text-gblack text-para-medium">Of entity set up costs saved per country</div>
             </div>
           </div>
         </section>
       </div>
-      <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-      <script src="./style/script.js"></script>
-    </body>
+    </div>
+  </div>
+  <div class="bg-3rd">
+    <div class="max-w-screen-xl mx-auto">
+      <section id="portfolio_section">
+        <div class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+          <div class="text-para-huge font-bold text-primary leading-loose mb-2">
+            OUR PORTFOLIO
+          </div>
+          <div class="font-bold text-title-normal leading-7 mb-8">
+            We provide the Perfect Solution<br>to your business growth
+          </div>
+          <div id="portfolio-gallery" class="w-full grid grid-cols-2 max-sm:grid-cols-1 gap-[70px] md:max-lg:gap-[35px]">
+            <div>
+              <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
+                <img src="./images/portfolio/portfolio-1.png" alt="" class="mb-4">
+                <div>
+                  <div class="text-title-small font-semibold leading-[30px] mb-2 text-fblack">
+                    Digital Marketing Agency Website
+                  </div>
+                  <div class="text-para-normal font-normal leading-loose text-gblack">
+                    This is a website for a client who want to achieve their goals  and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
+                <img src="./images/portfolio/portfolio-2.png" alt="" class="mb-4">
+                <div class="mr-4">
+                  <div class="text-title-small font-semibold leading-[30px] mb-2 text-fblack">
+                    Digital Marketing Agency Website
+                  </div>
+                  <div class="text-para-normal font-normal leading-loose text-gblack">
+                    This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
+                <img src="./images/portfolio/portfolio-3.png" alt="" class="mb-4">
+                <div>
+                  <div class="text-title-small font-semibold leading-[30px] mb-2 text-fblack">
+                    Digital Marketing Agency Website
+                  </div>
+                  <div class="text-para-normal font-normal leading-loose text-gblack">
+                    This is a website for a client who want to achieve their goals  and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card mb-[70px] md:max-lg:mb-[40px]">
+                <img src="./images/portfolio/portfolio-4.png" alt="" class="mb-4">
+                <div class="mr-4">
+                  <div class="text-title-small font-semibold leading-[30px] mb-2 text-fblack">
+                    Digital Marketing Agency Website
+                  </div>
+                  <div class="text-para-normal font-normal leading-loose text-gblack">
+                    This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goa This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="bg-4th">
+    <div class="max-w-screen-xl mx-auto">
+      <section id="ourTeam_section" class=" pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+        <div>
+          <div class="text-para-huge font-bold text-primary leading-loose mb-2">
+            OUR TEAM
+          </div>
+          <div class="font-bold text-title-normal leading-7 mb-8">
+            We provide the Perfect Solution<br>to your business growth
+          </div>
+          <div id="team-gallery" class="w-full grid grid-cols-3 gap-[40px] max-md:grid-cols-1 md:max-lg:grid-cols-2 m-auto">
+            <div class="teams_card">
+              <img src="./images/teams/team1.png" alt="" class="pb-2">
+              <p class="leading-loose text-primary text-para-medium font-medium">Chief Executive Officer</p>
+              <p class="leading-loose text-title-small font-medium">Suraj Kandel</p>
+            </div>
+            <div class="teams_card">
+              <img src="./images/teams/team2.png" alt="" class="pb-2">
+              <p class="leading-loose text-primary text-para-medium font-medium">Chief Technical Officer</p>
+              <p class="leading-loose text-title-small font-medium">John Doe</p>
+            </div>
+            <div class="teams_card">
+              <img src="./images/teams/team3.png" alt="" class="pb-2">
+              <p class="leading-loose text-primary text-para-medium font-medium">Project Manager</p>
+              <p class="leading-loose text-title-small font-medium">Jane Kandel</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lorem" class="pt-5 p-2 mb-[60px] lg:mx-[100px] max-md:mx-5 mx-10  m-auto bg-secondary min-h-[280px] rounded-[16px]">
+        <div class="flex w-full min-h-[280px] justify-center items-center">
+          <div class="md:flex m-5">
+            <img src="./images/lorem-1.png" alt="" class=" size-[150px] mr-5">
+            <div >
+              <h2 class="text-primary text-title-normal font-bold pb-2">
+                Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry
+              </h2>
+              <p class="text-fblack text-para-medium font-normal mr-4 leading-loose">
+                Find out how Deel can fit your budget and needs based on the growth<br>stage of your business, the size of your team, or both.
+              </p>
+              <a href="#">
+                <button type="button" class="flex items-center justify-center w-[132px] h-[58px] rounded-[50px] bg-[#008282] text-white text-para-medium mt-4">
+                  Subscribe
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="max-w-screen-xl mx-auto">
+    <section id="tetimonials_section" class="pt-5 mb-[60px] lg:mx-[70px] max-md:mx-5 mx-10 m-auto">
+      <div>
+        <div class="grid grid-cols-2 max-md:grid-cols-1 place-content-between">
+          <div>
+            <div class="text-para-huge font-bold text-primary leading-loose mb-2">
+              TESTIMONIALS
+            </div>
+            <div class="font-bold text-title-normal leading-7 mb-8">
+              See what our customer<br>say about us
+            </div>
+          </div>
+          <div class="max-md:hidden">
+            <div class="flex flex-col items-center w-full">
+              <div class="flex">
+                <button id="testimonial_prev" type="button" class="mr-4 flex items-center w-[58px] h-[58px] rounded-[50px] bg-white border-[1px] border-black font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "prev">
+                  <div class="text-para-medium font-normal flex h-full w-full justify-center items-center">
+                    <img src="./images/svg/testimonial_prev.svg" alt=""  class="w-[14px] h-auto">
+                  </div>
+                </button>
+                <button id="testimonial_next" type="button" class="flex items-center w-[58px] h-[58px] rounded-[50px] bg-[#008282] text-white font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "next">
+                  <div class="text-para-medium font-normal flex h-full w-full justify-center items-center">
+                    <img src="./images/svg/testimonial_next.svg" alt="" class="w-[14px] h-auto">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="testimonial-gallery" class="w-full overflow-hidden relative" >
+          <div id="testimonial-slider">
+            <div class="testimonial_card min-w-[500px] shadow-lg max-md:min-w-[90vw] mr-[30px] flex items-center rounded-[40px] mb-4">
+              <div class="px-8 py-4">
+                <p class="text-gblack text-para-large font-normal">
+                  Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service.Thank You for your service.
+                </p>
+                <div class="flex mt-3">
+                  <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
+                    <img src="./images/testimonial/testimonial-1.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="text-fblack text-para-huge font-semibold">Emily Stones</h1>
+                    <p class="text-gblack text-para-large font-normal">CEO, Marketing Guru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial_card min-w-[500px] shadow-lg max-md:min-w-[90vw] mr-[30px] flex items-center rounded-[40px] mb-4">
+              <div class="px-8 py-4">
+                <p class="text-gblack text-para-large font-normal">
+                  Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
+                </p>
+                <div class="flex mt-3">
+                  <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
+                    <img src="./images/testimonial/testimonial-1.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="text-fblack text-para-huge font-semibold">Emily Stones</h1>
+                    <p class="text-gblack text-para-large font-normal">CEO, Marketing Guru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial_card min-w-[500px] shadow-lg max-md:min-w-[90vw] mr-[30px] flex items-center rounded-[40px] mb-4">
+              <div class="px-8 py-4">
+                <p class="text-gblack text-para-large font-normal">
+                  Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
+                </p>
+                <div class="flex mt-3">
+                  <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
+                    <img src="./images/testimonial/testimonial-1.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="text-fblack text-para-huge font-semibold">Emily Stones</h1>
+                    <p class="text-gblack text-para-large font-normal">CEO, Marketing Guru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial_card min-w-[500px] shadow-lg max-md:min-w-[90vw] mr-[30px] flex items-center rounded-[40px] mb-4">
+              <div class="px-8 py-4">
+                <p class="text-gblack text-para-large font-normal">
+                  Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
+                </p>
+                <div class="flex mt-3">
+                  <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
+                    <img src="./images/testimonial/testimonial-1.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="text-fblack text-para-huge font-semibold">Emily Stones</h1>
+                    <p class="text-gblack text-para-large font-normal">CEO, Marketing Guru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial_card min-w-[500px] shadow-lg max-md:min-w-[90vw] mr-[30px] flex items-center rounded-[40px] mb-4">
+              <div class="px-8 py-4">
+                <p class="text-gblack text-para-large font-normal">
+                  Thank You for your service. I am very pleased with the result. I have seen exponencial growth in my business and its all thanks to your amazing service 
+                </p>
+                <div class="flex mt-3">
+                  <div class="size-[60px] rounded-[30px] overflow-hidden bg-tertiary mr-3">
+                    <img src="./images/testimonial/testimonial-1.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="text-fblack text-para-huge font-semibold">Emily Stones</h1>
+                    <p class="text-gblack text-para-large font-normal">CEO, Marketing Guru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-md:block hidden mt-4">
+          <div class="flex flex-col items-center w-full">
+            <div class="flex">
+              <button id="testimonial_prev_s" type="button" class="mr-4 flex items-center w-[40px] h-[40px] rounded-[50px] bg-white border-[1px] border-black font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "prev">
+                <div class="flex h-full w-full justify-center items-center">
+                  <img src="./images/svg/testimonial_prev.svg" alt=""  class="w-[11px] h-auto">
+                </div>
+              </button>
+              <button id="testimonial_next_s" type="button" class="flex items-center w-[40px] h-[40px] rounded-[50px] bg-[#008282] text-white font-medium" data-bs-target = "#testimonial-gallery" data-bs-slide = "next">
+                <div class="flex h-full w-full justify-center items-center">
+                  <img src="./images/svg/testimonial_next.svg" alt="" class="w-[11px] h-auto">
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="max-w-screen-xl mx-auto">
+    <section id="getInTouch_section" class="relative grid mb-[60px] max-lg:grid-cols-1 grid-cols-2">
+      <div class="flex items-center">
+        <div class="mr-10 ml-2 mb-4 max-md:mx-5">
+          <div class="mb-8">
+            <h2 class="text-[56px] max-sm:text-[35px] font-extrabold pb-5 text-fblack">
+              Get in <span class="text-primary">Touch</span>
+            </h2>
+            <p class="text-para-large font-normal text-gblack mx-auto">
+              Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+            </p>
+          </div>
+          <form>
+            <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
+              <input type="text" name="username" id="username" class="pl-4 text-para-huge w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Name">
+            </div>
+            <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
+              <input type="email" name="email" id="email" class="pl-4 text-para-huge w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Email">
+            </div>
+            <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
+              <input type="text" name="phone" id="phone" class="pl-4 text-para-huge w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6" placeholder="Phone">
+            </div>
+            <div class="border-[2px] border-gray-200 w-full h-[60px] my-4">
+              <select id="find" name="find" class="pl-4 text-para-huge w-full text-fblack h-full block border-0 bg-transparent placeholder:text-gray-400 focus:ring-0 sm:leading-6">
+                <option selected>How did you find us?</option>
+                <option>From Linkedin</option>
+                <option>From Facebook</option>
+                <option>Somewhere Else</option>
+              </select>
+            </div>
+            <a href="#">
+              <button type="button" class="flex items-center justify-center w-full h-[58px] bg-primary text-white font-extrabold text-para-medium">
+                Submit
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+      <div class="relative h-[800px] w-full">
+        <div class="h-full flex">
+          <div class="w-[40%]"></div>
+          <div class="w-[60%] bg-primary"></div>
+        </div>
+        <div class="absolute w-[500px] bottom-[10%] top-[10%] max-sm:right-[10%] bg-gray-200">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3058.27023032175!2d85.30064459128266!3d27.674632650195097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1704948278754!5m2!1sen!2snp" width="500" height="640" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="max-w-screen-xl mx-auto">
+    <section id="footer_Section" class="relative">
+      <div class="bg-black text-white p-10 font-poppins">
+        <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-8">
+          <div>
+            <a href="#" class="flex items-center mb-4">
+              <img src="./images/TechJAR_logo_dark.png" class="h-6 mr-3 sm:h-9" alt="Tech Jar" />
+            </a>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-para-huge font-bold leading-[30px] mb-2">
+              Quick Links
+            </h2>
+            <a href="#header_section">
+              <p class="font-normal text-para-medium leading-[30px]">Home</p>
+            </a>
+            <a href="#aboutUs_section">
+              <p class="font-normal text-para-medium leading-[30px]">Who we are</p>
+            </a>
+            <a href="#whatWeDo">
+              <p class="font-normal text-para-medium leading-[30px]">What we do</p>
+            </a>
+            <a href="#reasonsToChooseUs">
+              <p class="font-normal text-para-medium leading-[30px]">Reasons to choose us</p>
+            </a>
+            <a href="#portfolio_section">
+              <p class="font-normal text-para-medium leading-[30px]">Our Portfolio</p>
+            </a>
+            <a href="#tetimonials_section">
+              <p class="font-normal text-para-medium leading-[30px]">Testimonials</p>
+            </a>
+          </div>
+          <div>
+            <h2 class="text-para-huge font-bold leading-[30px] mb-2">
+              Contact
+            </h2>
+            <a href="tel:'9988996699'" class="flex">
+              <img src="./images/footer/mail-coolcare.svg" alt="" class="mr-2">
+              <p class="font-normal text-para-medium leading-[30px]">
+                99 88 99 66 99
+              </p>
+            </a>
+            <a href="mailto:'techjar@gmail.com'" class="flex">
+              <img src="./images/footer/call.svg" alt="" class="mr-2">
+              <p class="font-normal text-para-medium leading-[30px]">
+                techjar@gmail.com
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-fblack text-white px-10 pt-5 pb-1 grid grid-cols-2 max-sm:grid-cols-1 place-content-between">
+        <p class="t-[14px] font-normal font-manrope mb-2">
+          © techjar.com 2024
+        </p>
+        <div class="md:place-self-end mb-2">
+          <div class="flex">
+            <a href="#" class="mr-8">
+              <img src="./images/footer/linkedin 1.svg" alt="" class="size-[20px]">
+            </a>
+            <a href="#" class="mr-8">
+              <img src="./images/footer/Facebook 1.svg" alt="" class="size-[20px]">
+            </a>
+            <a href="#" class="mr-8">
+              <img src="./images/footer/Youtube 1.svg" alt="" class="size-[20px]">
+            </a>
+            <a href="#" class="mr-8">
+              <img src="./images/footer/Instagram 1.svg" alt="" class="size-[20px]">
+            </a>
+            <a href="#" class="mr-8">
+              <img src="./images/footer/Twitter 1.svg" alt="" class="size-[20px]">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    // For Testimonial Slider with control
+    function sliderFunc() {
+      let sliderBox = document.querySelector('#testimonial-slider');
+      let tapToRightBtn = document.querySelector('#testimonial_next');
+      let tapToLeftBtn = document.querySelector('#testimonial_prev');
+      let tapToRightBtn_s = document.querySelector('#testimonial_next_s');
+      let tapToLeftBtn_s = document.querySelector('#testimonial_prev_s');
+      const childCount = sliderBox.childElementCount;
+      const slideWidth = sliderBox.childNodes[1].getBoundingClientRect().width+30;
+      const element = document.getElementById("testimonial-gallery");
+      const containerWidth = element.getBoundingClientRect().width;
+      const sliderWidth = childCount * slideWidth;
+      let index = 0;
+      sliderBox.style.width = `${sliderWidth}px`;
+      sliderBox.style.left = '0px';
+      function sliderNext() {
+        let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace('px', '')) : 0;
+        let nextLeftPosition = currentLeftPosition;
+          if(sliderWidth>containerWidth && sliderWidth-Math.abs(currentLeftPosition)-containerWidth>slideWidth){
+            nextLeftPosition = currentLeftPosition - slideWidth;
+          }else if(sliderWidth>containerWidth){
+            nextLeftPosition = currentLeftPosition - (sliderWidth-Math.abs(currentLeftPosition)-containerWidth);
+          }
+          sliderBox.style.left = `${nextLeftPosition}px`;
+      }
+      function sliderPrev() {
+        let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace('px', '')) : 0;
+        if(Math.abs(currentLeftPosition)>slideWidth){
+          nextLeftPosition = currentLeftPosition + slideWidth;
+        }else{
+          nextLeftPosition = currentLeftPosition + Math.abs(currentLeftPosition);
+        }
+        sliderBox.style.left = `${nextLeftPosition}px`;
+      }
+      tapToRightBtn.addEventListener('click', sliderNext);
+      tapToLeftBtn.addEventListener('click', sliderPrev);
+      tapToRightBtn_s.addEventListener('click', sliderNext);
+      tapToLeftBtn_s.addEventListener('click', sliderPrev);
+    }
+    sliderFunc();
+  </script>
+</body>
 </html>
