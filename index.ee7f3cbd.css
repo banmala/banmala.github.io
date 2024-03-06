@@ -831,6 +831,8 @@ body {
 }
 
 .cursorFollowerThird {
+  transform: translate(-50%, -50%);
+  -webkit-transform: transform .3s;
   mix-blend-mode: normal;
   z-index: -999;
   pointer-events: none;
@@ -839,7 +841,6 @@ body {
   height: 100rem;
   transition: transform .3s;
   position: fixed;
-  transform: translate(-50%, -50%);
 }
 
 #banner-section {
