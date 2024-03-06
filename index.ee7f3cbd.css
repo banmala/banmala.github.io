@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";
 *, :before, :after {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
@@ -527,15 +528,6 @@ img, video {
   border-width: 0;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .bg-black-full {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -686,6 +678,10 @@ img, video {
 
 .font-manrope {
   font-family: Manrope;
+}
+
+.font-montserrat {
+  font-family: Montserrat;
 }
 
 .font-poppins {
@@ -1037,10 +1033,13 @@ body {
 
 .inputdiv {
   background-color: #fff9;
+  border-width: 1px;
+  border-color: #e0e0e0;
   width: 100%;
   height: 60px;
   margin-top: 16px;
   margin-bottom: 16px;
+  font-family: Montserrat;
 }
 
 .find-us-select {
