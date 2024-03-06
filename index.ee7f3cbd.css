@@ -877,10 +877,22 @@ body {
   padding-top: 20px;
 }
 
+#whatwedo-slider {
+  transition: left .5s;
+  display: flex;
+  position: relative;
+}
+
 .info-card {
   background-color: #fff;
   border-radius: 30px;
-  padding: 5rem 2rem;
+  min-width: 345px;
+  margin-right: 30px;
+  padding: 3rem 2rem;
+}
+
+.info-card:last-child {
+  margin-right: 0 !important;
 }
 
 .info-card-image {
@@ -1294,10 +1306,6 @@ body {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:place-self-end {
     place-self: end;
   }
@@ -1374,12 +1382,6 @@ body {
   .lg\:py-2\.5 {
     padding-top: .625rem;
     padding-bottom: .625rem;
-  }
-}
-
-@media (width >= 1280px) {
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
