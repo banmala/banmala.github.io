@@ -2,6 +2,7 @@ window.onload = ()=>{
     toggleNavbar();
     controlledTestimonialSlider();
     controlledWhatWeDoSlider();
+    controlledOurTeamsSlider();
     infiniteSlider();
     responsingBgWithMouseMovement();
 };
@@ -74,6 +75,41 @@ const controlledWhatWeDoSlider = ()=>{
         const childCount = sliderBox.childElementCount;
         const slideWidth = sliderBox.childNodes[1].getBoundingClientRect().width + 30;
         const containerWidth = whatwedoGallery.getBoundingClientRect().width;
+        const sliderWidth = childCount * slideWidth;
+        sliderBox.style.width = `${sliderWidth}px`;
+        sliderBox.style.left = "0px";
+        function sliderNext() {
+            let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace("px", "")) : 0;
+            let nextLeftPosition1 = currentLeftPosition;
+            let shiftValue = sliderWidth - Math.abs(currentLeftPosition) - containerWidth;
+            if (sliderWidth > containerWidth && shiftValue > slideWidth) nextLeftPosition1 = currentLeftPosition - slideWidth;
+            else if (sliderWidth > containerWidth) nextLeftPosition1 = currentLeftPosition - shiftValue;
+            sliderBox.style.left = `${nextLeftPosition1}px`;
+        }
+        function sliderPrev() {
+            let currentLeftPosition = sliderBox.style.left ? parseFloat(sliderBox.style.left.replace("px", "")) : 0;
+            if (Math.abs(currentLeftPosition) > slideWidth) nextLeftPosition = currentLeftPosition + slideWidth;
+            else nextLeftPosition = currentLeftPosition + Math.abs(currentLeftPosition);
+            sliderBox.style.left = `${nextLeftPosition}px`;
+        }
+        tapToRightBtn.addEventListener("click", sliderNext);
+        tapToLeftBtn.addEventListener("click", sliderPrev);
+        tapToRightBtn_small.addEventListener("click", sliderNext);
+        tapToLeftBtn_small.addEventListener("click", sliderPrev);
+    }
+};
+const controlledOurTeamsSlider = ()=>{
+    let sliderBox = document.querySelector("#ourteam-slider");
+    let tapToRightBtn = document.querySelector("#ourteam_next");
+    let tapToLeftBtn = document.querySelector("#ourteam_prev");
+    let tapToRightBtn_small = document.querySelector("#ourteam_next_small");
+    let tapToLeftBtn_small = document.querySelector("#ourteam_prev_small");
+    let ourteamGallery = document.getElementById("ourteam-gallery");
+    if (!sliderBox || !tapToLeftBtn || !tapToRightBtn || !tapToLeftBtn_small || !tapToRightBtn_small || !ourteamGallery) console.warn("Some div with given Ids not found. So, couldnot initialize slider in ourteam section.");
+    else {
+        const childCount = sliderBox.childElementCount;
+        const slideWidth = sliderBox.childNodes[1].getBoundingClientRect().width + 30;
+        const containerWidth = ourteamGallery.getBoundingClientRect().width;
         const sliderWidth = childCount * slideWidth;
         sliderBox.style.width = `${sliderWidth}px`;
         sliderBox.style.left = "0px";

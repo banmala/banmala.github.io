@@ -980,12 +980,27 @@ body {
 }
 
 #our-team-section {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   padding-top: 20px;
 }
 
-#team-gallery {
-  gap: 40px;
+#ourteam-slider {
+  transition: left .5s;
+  display: flex;
+  position: relative;
+}
+
+.team-slider-inner {
+  min-width: 345px;
+  margin-right: 35px;
+}
+
+.team-slider-inner:last-child {
+  margin-right: 0;
+}
+
+.teams-card {
+  margin-bottom: 35px;
 }
 
 .subscribe {
