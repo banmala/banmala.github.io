@@ -443,6 +443,10 @@ img, video {
   height: 100%;
 }
 
+.min-h-16 {
+  min-height: 4rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -465,6 +469,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-16 {
+  min-width: 4rem;
 }
 
 .max-w-screen-xl {
