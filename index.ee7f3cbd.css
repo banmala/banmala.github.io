@@ -302,6 +302,21 @@ img, video {
   margin-bottom: auto;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1344,6 +1359,11 @@ body {
 
   .lg\:order-2 {
     order: 2;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .lg\:mr-0 {
